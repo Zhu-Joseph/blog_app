@@ -1,0 +1,9 @@
+<h1>Pokemon, Gotta Catch em All</h1>
+
+<ol>
+  <% @pokemons.each do |pokemon| %>
+    <li>
+        <%= link_to pokemon['name'], pokemon %>
+    </li>
+  <% end %>
+</ol>
